@@ -1,0 +1,32 @@
+//Color
+$opacity-hover-btn :1;
+
+//black
+$regular-black :#5a5757;
+
+//blue
+$regular-blue: rgba(40, 129, 245, $opacity-hover-btn);
+$dark-blue: rgba(40, 129, 245, $opacity-hover-btn);
+$light-blue: rgba(40, 129, 245, $opacity-hover-btn);
+
+//red
+$regular-red: rgba(233, 30, 99 ,  $opacity-hover-btn);
+$dark-red: rgba(233, 30, 99 ,  $opacity-hover-btn);
+$light-red: rgba(233, 30, 99 ,  $opacity-hover-btn);
+
+//green
+$regular-green: rgba(29, 189, 174 ,  $opacity-hover-btn);
+$dark-green: rgba(29, 189, 174 ,  $opacity-hover-btn);
+$light-green: rgba(29, 189, 174 ,  $opacity-hover-btn);
+
+//gray
+$regular-gray: rgba(29, 189, 174 ,  $opacity-hover-btn);
+$dark-gray: rgba(29, 189, 174 ,  $opacity-hover-btn);
+$light-gray: rgba(29, 189, 174 ,  $opacity-hover-btn);
+
+//Path
+$ROOT_PATH: '../../../';
+
+$FONT_PATH : '#{$ROOT_PATH}assets/fonts/';
+
+$IMG_PATH : '#{$ROOT_PATH}images/';

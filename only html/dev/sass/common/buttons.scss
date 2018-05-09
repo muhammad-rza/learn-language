@@ -1,0 +1,55 @@
+// $buttons-color: 'blue' , 'red' , 'green' , 'gray' , 'disbaled';
+
+$opacity-hover-btn :1;
+
+$buttons-color : (
+    'black-r'    : $regular-black,
+    'blue-r'     : $regular-blue,
+    'red-r'      : $regular-red,
+    'green-r'    : $regular-green,
+    'gray-r'     : $regular-gray,
+);
+
+.Btn {
+
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0px 1px 8px -1px #635c5c;
+    cursor: pointer;
+    transition: all ease-in-out 100ms;
+    height: 45px;
+    white-space: nowrap;
+
+    &-round {
+        border-radius: 22px;
+    }
+    @each $color in $buttons-color {
+
+        $className: nth($color, 1);
+        $value: nth($color, 2);
+
+        &-#{$className} {
+            background:  $value;
+
+            &:hover {
+                opacity: 0.9;
+            }
+        }
+
+    }
+    
+    .Btn-text {
+        color:white;
+    }
+    &:hover {
+        .Btn-text {
+            // color:red;
+        }
+    }
+
+
+
+}

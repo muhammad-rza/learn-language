@@ -1,0 +1,21 @@
+$space : 20;
+
+@while $space > 0 {
+
+    .py-#{$space} {
+        padding-top: #{$space}px;
+        padding-bottom: #{$space}px;
+    }
+    .px-#{$space} {
+        padding-left: #{$space}px;
+        padding-right: #{$space}px;
+    }
+
+    .pt-#{$space} {
+        padding-top: #{$space}px;
+    }
+
+    $space : $space - 5;
+
+}
+

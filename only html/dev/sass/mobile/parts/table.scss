@@ -1,0 +1,46 @@
+.TableHeader  {
+    &__inner {
+        border-bottom: 1px solid  #d4d4d4;
+        &__key {
+            background: #f3f3f3;
+
+            border-right: 1px solid  #d4d4d4;      
+            &:first-child {
+                border-left:1px solid  #d4d4d4;    
+            }   
+        }
+
+        &--height {
+            height: 45px;
+        }
+    }
+}
+
+
+.TableContent {
+    &__inner {
+        &__list {
+            border-bottom: 1px solid  #d4d4d4;
+
+            &:nth-child(even) {
+                background: rgba(236, 236, 236, 0.35);//#f3f3f3;
+            }
+            &__item {      
+                border-right: 1px solid  #d4d4d4;      
+                &:first-child {
+                    border-left:1px solid  #d4d4d4;    
+                }   
+                // &:not(:last-child) {
+                //     border-right: 1px solid  #d4d4d4;
+                    
+                // }
+            }
+
+            &--height {
+                height: 35px;
+            }
+        }       
+
+    
+    }
+}

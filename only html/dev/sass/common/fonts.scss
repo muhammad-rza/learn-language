@@ -1,0 +1,24 @@
+@font-face {
+
+    font-family: Product-Sans-Bold;
+    src: url("#{$FONT_PATH}product-sans/Product-Sans-Bold.ttf");
+
+}
+
+@font-face {
+
+    font-family: Product-Sans-Regular;
+    src: url("#{$FONT_PATH}product-sans/Product-Sans-Regular.ttf");
+
+}
+
+//Product-Sans-Regular
+
+
+.font-psb {
+    font-family: Product-Sans-Bold;
+}
+
+.font-psr {
+    font-family: Product-Sans-Regular;
+}

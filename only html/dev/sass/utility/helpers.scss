@@ -1,0 +1,77 @@
+
+
+.text {
+    &-center {
+        text-align: center;
+    }
+    &-left {
+        text-align: left;
+    }
+    &-right {
+        text-align: right;
+    }   
+}
+
+$colors : (
+    'black-r'    : $regular-black,
+    'blue-r'     : $regular-blue,
+    'red-r'      : $regular-red,
+    'green-r'    : $regular-green,
+    'gray-r'     : $regular-gray,
+);
+
+@each $color ,  $value in $colors {
+    .text-#{$color} {
+        color:  $value;
+    }
+    .bg-#{$color} {
+        background: $value;
+    }
+}
+
+.usr-tch {
+    &-blue {
+        -webkit-tap-highlight-color: rgba(51,122,183,.5);
+    }
+}
+
+.cur {
+    &-p {
+        cursor: pointer;
+    }
+}
+
+
+//position
+
+.pos {
+    &-fixed {
+        position: fixed;
+    }
+}
+
+//width
+
+.w {
+    &-100 {
+        width: 100%;
+    }
+}
+
+//height 
+
+.h {
+    &-100 {
+        height: 100%;
+    }
+}
+
+//fonts
+
+$fonts: 10 , 12 , 14 , 16 , 18 ,20 ,22 ,24 ,40;
+
+@each $font in $fonts {
+    .font-#{$font} {
+        font-size: #{$font}px;
+    }
+}

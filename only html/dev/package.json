@@ -1,0 +1,33 @@
+{
+  "name": "do-it",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aslan Muhammad-Rza",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "grunt": "^0.4.5",
+    "grunt-add-comment": "^1.1.6",
+    "grunt-assemble": "^0.4.0",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-imagemin": "^2.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^3.1.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-express": "^1.4.1",
+    "grunt-grunticon": "^2.3.2",
+    "grunt-svg-symbols": "^0.2.0",
+    "load-grunt-tasks": "^3.5.2"
+  },
+  "dependencies": {
+    "g": "^2.0.1",
+    "grunt-livereload": "^0.1.3"
+  }
+}
