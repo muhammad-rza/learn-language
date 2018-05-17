@@ -1,11 +1,10 @@
 const state = {
     tabs: [
-        {url:'/vocabulary',color:'blue',name:'All vocabularies'},
+        {url:'/vocabularies',color:'blue',name:'All vocabularies'},
         {url:'/subject',color:'grey',name:'Subject'},
-        {url:'/vocabulary/deleted',color:'red',name:'Deleted vocabularies'},
-        {url:'/vocabulary/done',color:'green',name:'Done vocabularies'}
     ],
     currentTab:0,
+    layout: 'mainLayout'
 }
 
 
@@ -14,8 +13,10 @@ const mutations = {
 
         if(isNaN(tabIndex)) return state.currentTab = state.tabs.indexOf(state.tabs.find((tab,index) => tab.url == tabIndex  ))
         else return state.currentTab = tabIndex ;
+    },
 
-        
+    SET_LAYOUT (state, payload) {
+        state.layout = payload
     }
 }
 

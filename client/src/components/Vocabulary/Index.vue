@@ -1,10 +1,22 @@
 <template>
-  
+  <div>
+      <HeaderList />
+  </div>
 </template>
 
 <script>
-export default {
 
+import HeaderList from '@/components/Vocabulary/HeaderList.vue';
+
+export default {
+    components :{
+        HeaderList
+    },
+
+
+    created() {
+        this.$store.dispatch('vocabularies/getVocabulary')
+    }
 }
 </script>
 

@@ -4,7 +4,7 @@
     <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
     <v-toolbar-title>{{$store.getters["tabs/getCurrentTab"].name}}</v-toolbar-title>
     <v-spacer></v-spacer>
-    </v-toolbar>
+  </v-toolbar>
       <v-navigation-drawer
       v-model="drawer"
       temporary

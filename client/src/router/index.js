@@ -7,16 +7,19 @@ Vue.use(Router);
 
 const ContentDefault = () => import('@/components/layouts/Content/Default');
 
-// import ContentDefault from '@/components/layouts/Content/Default';
+    const Vocabulary = () => import('@/components/Vocabulary/Index.vue');
 
-const Vocabulary = () => import('@/components/Vocabulary/Index.vue');
+    const DeletedVocabulary = () => import('@/components/Vocabulary/Deleted.vue');
 
-const DeletedVocabulary = () => import('@/components/Vocabulary/Deleted.vue');
+    const DoneVocabulary = () => import('@/components/Vocabulary/Done.vue');
 
-const DoneVocabulary = () => import('@/components/Vocabulary/Done.vue');
+    const SubjectSimple = () => import('@/components/Subject/SubjectSimple.vue');
 
-
-const SubjectSimple = () => import('@/components/Subject/SubjectSimple.vue');
+// 
+// const GuestLayout = () => import('@/components/layouts/Guest/GuestLayout.vue');
+// const Login = () => import('@/components/layouts/Guest/GuestLayout.vue');
+// const GuestLayout = () => import('@/components/layouts/Guest/GuestLayout.vue');
+// const AuthLayout = () => import('@/components/layouts/Auth/AuthLayout.vue');
 
 export default new Router({
   mode: 'history',
@@ -27,7 +30,7 @@ export default new Router({
       component: ContentDefault,
       children: [
         {
-          path: 'vocabulary/',
+          path: 'vocabularies/',
           name: 'IndexVocabulary',
           component: Vocabulary,
 

@@ -8,21 +8,21 @@
      
       >
         <v-btn dark @click="changeRoute(0)" >
-          <!-- <span>Vocabulary</span> -->
+         
           <v-icon>list_alt</v-icon>
         </v-btn>
         <v-btn dark  @click="changeRoute(1)">
-          <!-- <span>Text</span> -->
+          
           <v-icon>subject</v-icon>
         </v-btn>
-        <v-btn dark @click="changeRoute(2)">
-          <!-- <span>Deleted</span> -->
+        <!-- <v-btn dark @click="changeRoute(2)">
+         
           <v-icon>delete</v-icon>
         </v-btn>
         <v-btn dark @click="changeRoute(3)">
           <span></span>
           <v-icon>check_circle</v-icon>
-        </v-btn>
+        </v-btn> -->
       </v-bottom-nav>
 </template>
 
